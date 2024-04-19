@@ -1,1 +1,14 @@
-<h1>hola</h1>
+
+<h2>Ingredientes</h2>
+<br>
+<h2>nombre--------precio-unidad</h2>
+{% for item in ingredients %}
+<h2>{{item.name}}  -----{{item.unit_price}}</h2>
+{% endfor %}
+<h1>--------------------</h1>
+<h2>=======>  {{revenue}}</h2>
+<h2>=======>  {{total_cost}}</h2>
+<h2>=======>  {{total}}</h2>
+
+
+
