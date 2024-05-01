@@ -34,6 +34,14 @@ class OrderView(ListView):
     model = Order
     template_name = "Restlima/order.html"
     
+
+class casa(TemplateView):
+    template_name = "Restlima/casa.html"
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['casa'] = request.get_full_path_info()
+        return context
+        
     
         
         
